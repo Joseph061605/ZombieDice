@@ -68,9 +68,7 @@ window.startButtonClick = () => {
         alert("that is not a valid number of points")
     };
 };
-if(window.location.href == "https://joseph061605.github.io/ZombieDice/"){
-    zombieUpdate();
-};
+zombieUpdate();
 
 export let exportZombies = sessionStorage.getItem("exportZombies");
 export let winningScore = parseInt(sessionStorage.getItem("winningScore"));
