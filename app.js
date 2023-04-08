@@ -61,14 +61,14 @@ window.startButtonClick = () => {
     if(score>=1)
     {
         sessionStorage.setItem("winningScore", score);
-        window.location.pathname = "/game.html";
+        window.location.pathname = "ZombieDice/game.html";
     }
     else
     {
         alert("that is not a valid number of points")
     };
 };
-if(window.location.pathname == "/index.html"){
+if(window.location.pathname == "ZombieDice/index.html"){
     zombieUpdate();
 };
 
