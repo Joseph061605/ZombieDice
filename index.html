@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Dice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <h1 id="title">Zombie Dice</h1>
+        <div id="playerSelection">
+            <table id="playerDisplay">
+                <tr id="upButtonDisplay">
+                    <td></td>
+                    <td><img src="Images/Buttons/upButton.png" class="arrow" onclick="upArrowClick(1)"></td>
+                </tr>
+                <tr id="zombieDisplay">
+                    <td><img id="addButton" src="Images/Buttons/addButton.png" class="zombieButton" onclick="addButtonClick()"></td>
+                    <td></td>
+                    <td><img id="subtractButton" src="Images/Buttons/subtractButton.png" class="zombieButton" onclick="subtractButtonClick()"></td>
+                </tr>
+                <tr id="downButtonDisplay">
+                    <td></td>
+                    <td><img  src="Images/Buttons/downButton.png" class="arrow" onclick="downArrowClick(1)"></td>
+                </tr>
+            </table>
+        </div>
+        <input id="rounds" type="text" placeholder="enter the winning number of points">
+        <br>
+        <img src="Images/Buttons/startButton.png"  onclick="startButtonClick()">
+        <script type="module" src="app.js"></script>
+    </body>
+</html>

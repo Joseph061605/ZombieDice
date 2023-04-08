@@ -1,0 +1,148 @@
+body{
+    text-align: center;
+    background-color: darkgrey;
+    margin: 0px;
+    font-family: 'Press Start 2P';
+    /*bmin-width: 900px;*/
+    overflow-x: hidden;
+}
+#title{
+    font-size: 50px;
+    background-color: gray;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#diceDisplay{
+    width: 100%;
+    white-space: nowrap;
+    background-color: lightgray;
+}
+#savedDiceDisplay{
+    height: 52px;
+    width: 100%;
+    padding-bottom: 18px;
+    white-space: nowrap;
+    background-color: gray;
+    overflow-y: hidden;
+    overflow-x: visible;
+    position: absolute;
+    z-index: 1;
+}
+#savedMargin{
+    height: 70px;
+    width: 100%;
+}
+.dice{
+    display: inline;
+    position: absolute;
+    z-index: 1;
+}
+.color{
+    margin-right: 27px;
+    display: inline;
+}
+.savedDice{
+    margin: 1px;
+    width: 50px;
+}
+#diceLeftDisplay{
+    margin: 10px;
+}
+#buttonDisplay{
+    background-image: url(Images/Buttons/buttonPanel.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    min-width: 750px;
+    white-space: nowrap;
+}
+#rollButton{
+    margin-right: 137px;
+}
+#endButton{
+    margin-left: 137px;
+}
+.button{
+    margin-top: 40px;
+}
+.button:hover{
+    transform: scale(1.01);
+}
+.button:active{
+    opacity: 0;
+}
+table{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+tr{
+    width: 200px;
+}
+#playerSelection{
+    background-color: lightgray;
+    height: 500px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.zombieButton:active{
+    transform: scale(0.9);
+}
+.arrow:active{
+    transform: scale(0.9);
+}
+.disabled{
+    cursor: not-allowed;
+    filter: grayscale(100%);
+}
+.disabled:hover{
+    transform: scale(1);
+}
+.disabled:active{
+    pointer-events: none;
+    transform: scale(1);
+    opacity: 100%;
+}
+.zombie{
+    transform: scale(0.5);
+    margin-top: 0px;
+}
+.currentPlayer{
+    border: 3px solid gold;
+    transform: scale(0.75);
+}
+
+.endgame{
+    border: 5px solid red;
+}
+.winner{
+    border: 5px solid red;
+    transform: scale(0.75);
+}
+#rounds{
+    font-family: 'Press Start 2P';
+    text-align: center;
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #ffa73a;
+    color: #d07300;
+    border: 0px solid transparent;
+}
+#rounds:focus{
+    border: 0px solid transparent;
+}
+#winningPointsDisplay{
+    font-size: 25px;
+    margin-top: 100px;
+    background-color: lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#playerDisplayGame{
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
