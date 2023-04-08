@@ -68,7 +68,7 @@ window.startButtonClick = () => {
         alert("that is not a valid number of points")
     };
 };
-if(window.location.pathname == "/index.html"){
+if(window.location.href == "https://joseph061605.github.io/ZombieDice/"){
     zombieUpdate();
 };
 
