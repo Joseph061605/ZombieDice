@@ -61,7 +61,7 @@ window.startButtonClick = () => {
     if(score>=1)
     {
         sessionStorage.setItem("winningScore", score);
-        window.location.href = "https://joseph061605.github.io/ZombieDice/game.html";
+        window.location.assign("https://joseph061605.github.io/ZombieDice/game.html");
     }
     else
     {
